@@ -244,11 +244,11 @@ class _DataScreenState extends State<DataScreen> {
                         SuccessSnackbar.show(context, "Successful");
                         Get.offAll(() => const HomeScreen());
                         setState(() {
-                          isLoading = true;
+                          isLoading = false;
                         });
                       } else {
                         setState(() {
-                          isLoading = true;
+                          isLoading = false;
                         });
                         Navigator.pop(context);
                         ErrorSnackbar.show(context, "Unsuccessful");
